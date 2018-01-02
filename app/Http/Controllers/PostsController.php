@@ -159,7 +159,7 @@ class PostsController extends Controller
       $post = Post::find($id);
       $post->title = $request->input('title');
       $post->body = $request->input('body');
-      if($request->hasFile('cover_image')){
+      if($request->hasFile('cover_image')){ // before it saves with ->save(), this checks if the cover_image is present, then stores it in $post->cover_image
           $post->cover_image = $fileNameToStore;
       }
       $post->save();
