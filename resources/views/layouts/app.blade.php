@@ -11,7 +11,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link href="css/app.css" rel="stylesheet"> <!-- YOU CAN REPLACE ASSET WITH THE SAME EXACT ROOT WITH OUT ANY OTHER TOOLS, ROUTE ASSETS ETC. -->
+
 </head>
 <body>
     <div id="app">
