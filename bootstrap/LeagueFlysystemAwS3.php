@@ -14,5 +14,5 @@ $client = new S3Client([
     'version' => '5.5',
 ]);
 
-$adapter = new AwsS3Adapter($client, 'your-bucket-name');
+$adapter = new AwsS3Adapter($client, 'lara-file');
 $filesystem = new Filesystem($adapter);
