@@ -27,4 +27,7 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
 
+Route::get('s3-image-upload','S3ImageController@imageUpload');
+
+Route::post('s3-image-upload','S3ImageController@imageUploadPost');
 ?>
