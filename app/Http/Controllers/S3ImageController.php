@@ -51,9 +51,9 @@ public function imageUploadPost(Request $request)
 
       $image = $request->file('image');
       $storage = 'storage/app/public/cover_images/';
-      $pathName = $storage . $image;
+      $pathname = $storage . $image;
 
-      $t = Storage::disk('s3')->put($pathName, file_get_contents($image), 'public');
+      $t = Storage::disk('s3')->put($imageName, file_get_contents($image), 'public/storage/cover_images');
 
       $imageName = Storage::disk('s3')->url($imageName);
 
