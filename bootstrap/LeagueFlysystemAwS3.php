@@ -10,7 +10,7 @@ $client = new S3Client([
         'key'    => 'AKIAILEH2PC56JEWGWQ',
         'secret' => 'NDC0S1SRCAG4CwDQPQUOHkfAhQK1TauuqONumL5C'
     ],
-    'region' => 'sts.us-east-1.amazonaws.com',
+    'region' => 'us-east-1',
     'version' => '5.5',
 ]);
 
